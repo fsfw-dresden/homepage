@@ -3,27 +3,44 @@
 <head>
 	<meta charset="utf-8">
 	<title>Freie Software und Freies Wissen Dresden</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
 	<style>
+        @font-face {
+            font-family: 'TitilliumWebRegular';
+            src: url('./font/TitilliumWebRegular.eot');
+            src: local('TitilliumWebRegular'), url('./font/TitilliumWebRegular.woff') format('woff'), url('./font/TitilliumWebRegular.ttf') format('truetype');
+        }
+        body { 
+            font-family: TitilliumWebRegular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+        }
+        #content {
+            width: 80%;
+            margin: auto;
+        }
+        .header-center {
+            text-align: center
+        }
 		dl dd { margin-left: 24px; }
-		.float-right { float: right; }
-		.nolinkcolors { text-decoration: none; color: black; }
-		#github { position: absolute; }
-		address span.adr { display:block; }
-		.region, .country-name { display: none; }
 	</style>
 </head>
 <body>
-	<div class="container">
-		<h1>Freie Software und Freies Wissen Dresden</h1>
+	<div id="content">
+		<h1 class="header-center">Freie Software und Freies Wissen Dresden</h1>
+        <h2>Thema des Projekts</h2>
+        Wir sind ein bisher noch lockerer Zusammenschluss von Leuten aus unterschiedlichsten Ecken der TU Dresden. Das Ziel dieses Projekts ist die Aufarbeitung von Inhalten
+        zu den Themen 
+        <ul>
+            <li>Open Source Software</li>
+            <li>Offener Zugang zu (Forschungs-)Wissen</li>
+            <li>Hilfe bei LaTeX- und Libreoffice-Problemen</li>
+            <li>Anwendung von Sicherheits- und Verschl&uuml;sselungssoftware</li>
+        </ul>
 		<h2>Organisatorische Treffen</h2>
 		<p>
 			<dl>
 				<dt>Datum</dt>
 				<dd>Jeden Mittwoch in einer ungeraden Woche</dd>
 				<dt>Uhrzeit</dt>
-				<dd>18:30</dd>
+				<dd>18:30 Uhr</dd>
 				<dt>Ort</dt>
 				<dd>
 					<div class="contact vcard">
@@ -36,16 +53,13 @@
 						<span class="country-name">Germany</span>
 					</div></div>
 				</dd>
+                <dt>Weitere Informationen</dt>
+                <dd>
+                    <a href="https://fusionforge.zih.tu-dresden.de/plugins/mediawiki/wiki/fsfw/index.php/Hauptseite">Projektwiki</a><br>
+                    <a href="https://github.com/fsfw-dresden/">Github Organisation</a>
+                </dd>
 			</dl>
 		</p>
-		<h2>Weitere Informationen</h2>
-		<p>
-			<a href="https://fusionforge.zih.tu-dresden.de/plugins/mediawiki/wiki/fsfw/index.php/Hauptseite">Wiki</a>
-		</p>
 	</div>
-	<iframe width="100%" height="400" src="https://fusionforge.zih.tu-dresden.de/plugins/mediawiki/wiki/fsfw/index.php?action=render&title=Hauptseite">
-	</iframe>
-
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-</body></html>
+</body>
+</html>
