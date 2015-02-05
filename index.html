@@ -9,7 +9,9 @@
 		h1 { text-align: center }
 		section { display: block; width: 80%; margin: auto; }
 		dl dd { margin-left: 24px; }
+		.hidden { display: none; }
 	</style>
+	<link rel="profile" href="http://microformats.org/profile/hcalendar">
 	<link rel="profile" href="http://microformats.org/profile/hcard">
 </head>
 <body>
@@ -24,27 +26,32 @@
 			<li>Anwendung von Sicherheits- und Verschlüsselungssoftware</li>
 		</ul>
 	</section>
-	<section>
-		<h2>Organisatorische Treffen</h2>
+	<section class="vevent">
+		<h2 class="summary category">Organisatorische Treffen</h2>
 		<dl>
-			<dt>Datum</dt>
-			<dd>Jeden Mittwoch in einer ungeraden Woche</dd>
-			<dt>Uhrzeit</dt>
-			<dd>18:30 Uhr</dd>
+			<dt>Datum &amp; Zeit</dt>
+			<dd>
+				<details class="rrule" title="freq=weekly;interval=2;byday=we;byhour=18;byminute=30;">Jeden Mittwoch in ungeraden Wochen ab 18:30 Uhr</span>
+				<span class="hidden dtstart" title="2015-01-14">2015-02-11</span><!-- seit dem 14.01.2015-->
+				<a class="hidden url" href="https://fsfw-dresden.de/">Website</a>
+			</dd>
 			<dt>Ort</dt>
 			<dd>
 				<div id="contact" class="vcard">
-				<div id="postal-address" class="adr">
-					<span class="extended-address"><strong>SLUB Dresden, DrePunct</strong> im Makerspace</span><br>
+				<div id="postal-address" class="adr location">
+					<strong class="name extended-address">SLUB Dresden, DrePunct</strong> im <span class="fn">Makerspace<span><br>
 					<span class="street-address">Zellescher Weg 17</span><br>
 					<span class="postal-code">01069</span>
 					<span class="locality">Dresden</span><br>
 					<span class="region">SN</span>
 					<span class="country-name">Germany</span>
+					<a href="http://osm.org/go/0MLhJbx8x--?layers=Q&way=23917889" target="_blank" class="hidden geo">Position:
+							<span class="latitude">51.02993</span>,
+							<span class="longitude">13.73786</span>
+					</a>
 				</div>
 					<!-- /* schonmal vorgemerkt für die baldige Erreichbarkeit per Email */
 					<a class="email" href="mailto:e@ma.il">Email-Erreichbarkeit</a><br>
-					<a class="url" href="https://fsfw-dresden.de/">Website</a>
 					-->
 				</div>
 			</dd>
