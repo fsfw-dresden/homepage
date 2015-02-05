@@ -9,7 +9,9 @@
 		h1 { text-align: center }
 		section { display: block; width: 80%; margin: auto; }
 		dl dd { margin-left: 24px; }
+		.hidden { display: none; }
 	</style>
+	<link rel="profile" href="http://microformats.org/profile/hcalendar">
 	<link rel="profile" href="http://microformats.org/profile/hcard">
 </head>
 <body>
@@ -24,13 +26,14 @@
 			<li>Anwendung von Sicherheits- und Verschlüsselungssoftware</li>
 		</ul>
 	</section>
-	<section>
-		<h2>Organisatorische Treffen</h2>
+	<section class="vevent">
+		<h2 class="category">Organisatorische Treffen</h2>
 		<dl>
-			<dt>Datum</dt>
-			<dd>Jeden Mittwoch in einer ungeraden Woche</dd>
-			<dt>Uhrzeit</dt>
-			<dd>18:30 Uhr</dd>
+			<dt>Datum &amp; Zeit</dt>
+			<dd>
+				<span class="rrule" title="freq=weekly;interval=2;byday=we;byhour=18;byminute=30;">Jeden Mittwoch in ungeraden Wochen ab 18:30 Uhr</span>
+				<span class="hidden dtstart" title="2015-01-14"> seit dem 14.01.2015</span>
+			</dd>
 			<dt>Ort</dt>
 			<dd>
 				<div id="contact" class="vcard">
