@@ -1,6 +1,0 @@
-<?php
-
-exec('git pull')
-
-?>
-
