@@ -9,8 +9,10 @@ html {
 }
 
 body {
-    background: white;
+    background: #F0F0F0;
     color: black;
+    margin: 0;
+    padding: 0;
 }
 
 h1 {
@@ -24,9 +26,6 @@ dl dd {
 
 #banner {
     display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 160px; /* exact height to match the banner image */
     background: url(./img/banner.png) repeat-x;
@@ -35,12 +34,29 @@ dl dd {
 
 header, section {
     display: block;
-    margin: 1rem auto;
+    padding: 0.5rem 1rem;
+    margin: 0 auto;
     max-width: 960px;
+    box-sizing: border-box;
+    background: white;
 }
 
-header {
-    margin-top: calc(160px + 1rem);
+#navigation-stripe {
+    display: block;
+    background: white;
+    box-shadow: 0 0 3px #CCC;
+    width: 100%;
+    z-index: 2;
+    position: relative; /* z-index only affects positioned elements */
+}
+
+#navigation {
+    display: block;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    box-sizing: border-box;
+    line-height: 3rem;
 }
 
 .hidden {
