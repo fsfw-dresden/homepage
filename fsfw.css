@@ -50,13 +50,33 @@ header, section {
     position: relative; /* z-index only affects positioned elements */
 }
 
-#navigation {
+#navigation-area {
     display: block;
     max-width: 960px;
     margin: 0 auto;
     padding: 0 1rem;
     box-sizing: border-box;
     line-height: 3rem;
+    position: relative; /* for placement of #sitelogo */
+}
+
+#sitelogo {
+    width: 150px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #CCC;
+    position: absolute;
+    top: -50px;
+    left: 1rem;
+}
+
+#navigation {
+    margin-left: calc(150px + 1rem);
+}
+
+header {
+    /* this placement is a bit more complicated because it needs to take the
+     * overflowing sitelogo into account */
+    padding-top: calc(100px - 3rem);
 }
 
 .hidden {
