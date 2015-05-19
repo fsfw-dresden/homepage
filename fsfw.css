@@ -4,11 +4,14 @@
     src: local('TitilliumWebRegular'), url('./font/TitilliumWebRegular.woff') format('woff'), url('./font/TitilliumWebRegular.ttf') format('truetype');
 }
 
+html {
+    font-family: TitilliumWebRegular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
 body {
     width: 100%;
-    background: #fff;
-    color: #000;
-    font-family: TitilliumWebRegular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background: white;
+    color: black;
 }
 
 h1 {
@@ -19,27 +22,27 @@ h1 {
 header {
     display: block;
     width: 80%;
-    margin-left: 12em;
-    margin-top: 1em;
+    margin-left: 12rem;
+    margin-top: 1rem;
 }
 
 section {
     display: block;
     width: 80%;
-    margin-left: 12em;
+    margin-left: 12rem;
 }
 
 dl dd {
-    margin-left: 24px;
+    margin-left: 2rem;
 }
 
 .title-img {
     display: block;
     position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 10em;
-    margin: 1em;
+    top: 0;
+    left: 0;
+    width: 10rem;
+    margin: 1rem;
 }
 
 .hidden {
