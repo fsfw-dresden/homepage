@@ -69,8 +69,49 @@ header, section {
     left: 1rem;
 }
 
-#navigation {
+ul#navigation {
+    margin: 0;
     margin-left: calc(150px + 1rem);
+    list-style: none;
+    display: inline;
+    padding: 0;
+}
+
+ul#navigation > li {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+ul#navigation > li > a {
+    display: inline-block;
+    color: inherit !important;
+    text-decoration: none !important;
+    line-height: 1rem;
+    padding: 0.5rem;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+ul#navigation > li.turquoise > a:hover,
+ul#navigation > li.turquoise > a:active,
+ul#navigation > li.turquoise > a:focus {
+    background: #28ADB8;
+    color: white !important;
+}
+
+ul#navigation > li.violet > a:hover,
+ul#navigation > li.violet > a:active,
+ul#navigation > li.violet > a:focus {
+    background: #654BC7;
+    color: white !important;
+}
+
+ul#navigation > li.green > a:hover,
+ul#navigation > li.green > a:active,
+ul#navigation > li.green > a:focus {
+    background: #6BBB00;
+    color: white !important;
 }
 
 header {
