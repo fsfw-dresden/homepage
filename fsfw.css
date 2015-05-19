@@ -22,7 +22,6 @@ body {
     width: 100%;
     height: 160px; /* exact height to match the banner image */
     background: url(./img/banner.png) repeat-x;
-    z-index: -1;
 }
 
 #navigation-stripe {
