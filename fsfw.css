@@ -9,7 +9,6 @@ html {
 }
 
 body {
-    width: 100%;
     background: white;
     color: black;
 }
@@ -17,19 +16,6 @@ body {
 h1 {
     text-align: left;
     font-size: 200%;
-}
-
-header {
-    display: block;
-    width: 80%;
-    margin-left: 12rem;
-    margin-top: 1rem;
-}
-
-section {
-    display: block;
-    width: 80%;
-    margin-left: 12rem;
 }
 
 dl dd {
@@ -44,19 +30,17 @@ dl dd {
     width: 100%;
     height: 160px; /* exact height to match the banner image */
     background: url(./img/banner.png) repeat-x;
+    z-index: -1;
+}
+
+header, section {
+    display: block;
+    margin: 1rem auto;
+    max-width: 960px;
 }
 
 header {
-    margin-top: calc(160px + 2rem);
-}
-
-.title-img {
-    display: block;
-    position: absolute;
-    top: 160px;
-    left: 0;
-    width: 10rem;
-    margin: 1rem;
+    margin-top: calc(160px + 1rem);
 }
 
 .hidden {
