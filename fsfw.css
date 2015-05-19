@@ -36,10 +36,24 @@ dl dd {
     margin-left: 2rem;
 }
 
-.title-img {
+#banner {
     display: block;
     position: absolute;
     top: 0;
+    left: 0;
+    width: 100%;
+    height: 160px; /* exact height to match the banner image */
+    background: url(./img/banner.png) repeat-x;
+}
+
+header {
+    margin-top: calc(160px + 2rem);
+}
+
+.title-img {
+    display: block;
+    position: absolute;
+    top: 160px;
     left: 0;
     width: 10rem;
     margin: 1rem;
