@@ -38,7 +38,7 @@ body {
     display: block;
     max-width: 960px;
     margin: 0 auto;
-    padding: 0 1rem;
+    padding: 0 0 0 1rem;
     box-sizing: border-box;
     line-height: 3rem;
     position: relative; /* for placement of #sitelogo */
@@ -77,6 +77,16 @@ ul#navigation > li > a {
     font-weight: bold;
 }
 
+ul#navigation > li.floated-icon {
+    float: right;
+    position: relative;
+    top: 2px;
+}
+
+ul#navigation > li > a > i.fa {
+    font-size: 1.8rem;
+}
+
 ul#navigation > li.turquoise > a:hover,
 ul#navigation > li.turquoise > a:active,
 ul#navigation > li.turquoise > a:focus {
@@ -95,6 +105,20 @@ ul#navigation > li.green > a:hover,
 ul#navigation > li.green > a:active,
 ul#navigation > li.green > a:focus {
     background: #6BBB00;
+    color: white !important;
+}
+
+ul#navigation > li.twitter-blue > a:hover,
+ul#navigation > li.twitter-blue > a:active,
+ul#navigation > li.twitter-blue > a:focus {
+    background: #55ACEE;
+    color: white !important;
+}
+
+ul#navigation > li.github-black > a:hover,
+ul#navigation > li.github-black > a:active,
+ul#navigation > li.github-black > a:focus {
+    background: #333333;
     color: white !important;
 }
 
