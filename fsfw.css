@@ -51,6 +51,9 @@ body {
     top: -50px;
     left: 1rem;
 }
+#sitelogo:hover {
+    box-shadow: 0 0 8px #CCC;
+}
 
 ul#navigation {
     margin: 0;
