@@ -37,7 +37,7 @@ body {
     display: block;
     max-width: 960px;
     margin: 0 auto;
-    padding: 0 0 0 1rem;
+    padding: 0 0.5rem 0 1rem;
     box-sizing: border-box;
     line-height: 3rem;
     position: relative; /* for placement of #sitelogo */
@@ -122,6 +122,43 @@ ul#navigation > li.github-black > a:active,
 ul#navigation > li.github-black > a:focus {
     background: #333333;
     color: white !important;
+}
+
+/********** condensed header layout for mobile **********/
+
+/* This reverts some rules below, which apply to the content area, through !important. */
+
+@media (max-width: 11700px) {
+    #sitelogo {
+        top: -170px;
+    }
+
+    #navigation-area {
+        padding: 0 0.5rem;
+    }
+    ul#navigation {
+        margin-left: 0;
+    }
+
+    #content-container {
+        padding-top: 1rem !important;
+    }
+
+    h1 {
+        margin-top: auto !important;
+        margin-left: 0 !important;
+    }
+}
+
+/* On very narrow screens (e.g. iPhone 5), we condense spacings in the
+ * navigation a bit to keep it from breaking to the next line. */
+@media (max-width: 23rem) {
+    #navigation-area {
+        padding: 0;
+    }
+    ul#navigation > li > a {
+        padding: 0.3rem;
+    }
 }
 
 /********** content area **********/
