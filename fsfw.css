@@ -128,7 +128,7 @@ ul#navigation > li.github-black > a:focus {
 
 /* This reverts some rules below, which apply to the content area, through !important. */
 
-@media (max-width: 11700px) {
+@media (max-width: 700px) {
     #sitelogo {
         top: -170px;
     }
