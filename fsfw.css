@@ -155,10 +155,15 @@ ul#navigation > li.github-black > a:focus {
  * navigation a bit to keep it from breaking to the next line. */
 @media (max-width: 23rem) {
     #navigation-area {
-        padding: 0;
+        padding: 0 0.3rem;
     }
     ul#navigation > li > a {
         padding: 0.3rem;
+    }
+}
+@media (max-width: 20rem) {
+    #navigation-area {
+        padding: 0;
     }
 }
 
