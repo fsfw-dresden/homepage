@@ -233,6 +233,16 @@ dl dd {
     color: white;
 }
 
+section.turquoise h1 {
+    background-color: #28ADB8;
+}
+section.violet h1 {
+    background-color: #654BC7;
+}
+section.green h1 {
+    background-color: #6BBB00;
+}
+
 section:first-child .imageheader h1 {
     margin-left: calc(150px + 2rem);
 }
@@ -253,12 +263,28 @@ p.conclusion {
     font-size: 0.7rem;
 }
 
-section.turquoise h1 {
-    background-color: #28ADB8;
+p.imagecredit > a[href*=imagecredit] {
+    font-size: 1rem;
+    color: black !important;
+    cursor: default;
 }
-section.violet h1 {
-    background-color: #654BC7;
+
+p.imagecredit > span {
+    margin-left: 0.3rem;
+    position: relative;
+    top: -0.15rem;
 }
-section.green h1 {
-    background-color: #6BBB00;
+
+p.imagecredit:target > span {
+    /* hidden by default on mobile, see above */
+    display: inline;
 }
+
+@media (max-width: 700px) {
+    /* enable compact image credit on themen.html */
+    p.imagecredit > a[href*=imagecredit] {
+        cursor: pointer;
+    }
+    p.imagecredit > span {
+        display: none;
+    }
