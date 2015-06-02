@@ -218,7 +218,7 @@ dl dd {
     background-position: center;
     margin: 0;
     padding: 0;
-    min-height: 150px;
+    min-height: 200px;
     position: relative; /* for .imagecredit placement */
 }
 
