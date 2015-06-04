@@ -227,13 +227,34 @@ dl dd {
     margin: 1rem 0;
     margin-left: 1rem;
     display: inline-block;
-    padding: 0 1rem;
+    padding: 0.5rem 1rem;
     border-radius: 5px;
+    line-height: 1.8rem;
     font-size: 2rem;
     font-weight: bold;
     color: white;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
+
+/* We condense the header layout a bit on narrow screens because it really looks weird when these inline-blocks break to the next line. */
+@media (max-width: 30rem) {
+    .imageheader h1 {
+        display: block;
+        margin: 0 !important;
+        border-radius: 0;
+    }
+}
+@media (max-width: 25rem) {
+    .imageheader h1 {
+        font-size: 1.8rem;
+    }
+}
+@media (max-width: 20rem) {
+    .imageheader h1 {
+        font-size: 1.6rem;
+    }
+}
+
 
 a.imagelicense {
     display: inline-block;
