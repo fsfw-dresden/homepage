@@ -141,13 +141,8 @@ ul#navigation > li.github-black > a:focus {
         margin-left: 0;
     }
 
-    #content-container {
-        padding-top: 1rem !important;
-    }
-
     h1 {
-        margin-top: auto !important;
-        margin-left: 0 !important;
+        margin-left: 1rem !important;
     }
 }
 
@@ -171,15 +166,21 @@ ul#navigation > li.github-black > a:focus {
 
 #content-container {
     display: block;
-    padding: 1rem;
+    padding: 1rem 0;
     margin: 0 auto;
     max-width: 960px;
     box-sizing: border-box;
     background: white;
     box-shadow: 0 0 3px #CCC;
+}
+
+#content-container > section > * {
+    margin: 1rem;
+}
+#content-container > section:not(.notopmargin):first-child > *:first-child {
     /* this placement is a bit more complicated because it needs to take the
      * overflowing sitelogo into account */
-    padding-top: calc(100px - 3rem);
+    margin-top: calc(100px - 3rem);
 }
 
 h1 {
@@ -187,10 +188,10 @@ h1 {
     font-size: 200%;
 }
 
-section:first-child > h1:first-child {
+#content-container > section:not(.notopmargin):first-child > h1:first-child {
     /* when the content starts with a <h1>, move it next to the overflowing sitelogo */
-    margin-top: -2rem;
-    margin-left: calc(150px + 1rem);
+    margin-top: 0rem;
+    margin-left: calc(150px + 2rem);
 }
 
 dl dd {
@@ -203,4 +204,111 @@ dl dd {
 
 .important {
     font-size: 120%;
+}
+
+/********** special rules for themen.html **********/
+
+#content-container.nopadding {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+#content-container section .imageheader {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    min-height: 200px;
+    position: relative; /* for .imagelicense placement */
+}
+
+.imageheader h1 {
+    margin: 1rem 0;
+    margin-left: 1rem;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    line-height: 1.8rem;
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* We condense the header layout a bit on narrow screens because it really looks weird when these inline-blocks break to the next line. */
+@media (max-width: 30rem) {
+    .imageheader h1 {
+        display: block;
+        margin: 0 !important;
+        border-radius: 0;
+    }
+}
+@media (max-width: 25rem) {
+    .imageheader h1 {
+        font-size: 1.8rem;
+    }
+}
+@media (max-width: 20rem) {
+    .imageheader h1 {
+        font-size: 1.6rem;
+    }
+}
+
+
+a.imagelicense {
+    display: inline-block;
+    position: absolute;
+    right: 0.5rem;
+    bottom: 0.5rem;
+}
+
+a.imagelicense img {
+    max-height: 1.5rem;
+    vertical-align: middle;
+    padding-left: 0.15rem;
+}
+
+section.turquoise h1 {
+    background-color: #28ADB8;
+}
+section.violet h1 {
+    background-color: #654BC7;
+}
+section.green h1 {
+    background-color: #6BBB00;
+}
+
+section:first-child .imageheader h1 {
+    margin-left: calc(150px + 2rem);
+}
+
+p.conclusion {
+    font-weight: bold;
+}
+
+footer {
+    background: #E8E8E8;
+    padding: 0.5rem 1rem;
+}
+
+footer h2 {
+    margin: 0.5rem 1rem;
+    font-size: 1rem;
+}
+
+footer ul#imagecredit {
+    margin: 0.5rem 1rem;
+    padding-left: 0.5rem;
+    list-style: none;
+    font-size: 0.8rem;
+}
+
+footer ul#imagecredit li {
+    padding: 0 0.5rem;
+}
+
+footer ul#imagecredit li:target {
+    display: inline-block;
+    background: #CCC;
 }
