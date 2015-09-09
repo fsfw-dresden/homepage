@@ -86,6 +86,14 @@ ul#navigation > li.floated-icon {
     top: 2px;
 }
 
+ul#navigation > li.floated-icon > a {
+    /* make sure all floated-icon buttons are about the same width (the glyph
+     * on i.fa-facebook is narrower than the others) */
+    display: inline-block;
+    min-width: 1.5rem;
+    text-align: center;
+}
+
 ul#navigation > li > a > i.fa {
     font-size: 1.8rem;
 }
@@ -118,6 +126,13 @@ ul#navigation > li.twitter-blue > a:focus {
     color: white !important;
 }
 
+ul#navigation > li.facebook-blue > a:hover,
+ul#navigation > li.facebook-blue > a:active,
+ul#navigation > li.facebook-blue > a:focus {
+    background: #3B5998;
+    color: white !important;
+}
+
 ul#navigation > li.github-black > a:hover,
 ul#navigation > li.github-black > a:active,
 ul#navigation > li.github-black > a:focus {
@@ -146,19 +161,20 @@ ul#navigation > li.github-black > a:focus {
     }
 }
 
-/* On very narrow screens (e.g. iPhone 5), we condense spacings in the
+/* On narrow screens (phones in portrait mode), we get rid of expendable menu items. */
+@media (max-width: 30rem) {
+    ul#navigation > li.expendable {
+        display: none;
+    }
+}
+/* On very narrow screens (the iPhone 5, that is), we condense spacings in the
  * navigation a bit to keep it from breaking to the next line. */
-@media (max-width: 23rem) {
+@media (max-width: 19rem) {
     #navigation-area {
         padding: 0 0.3rem;
     }
     ul#navigation > li > a {
         padding: 0.3rem;
-    }
-}
-@media (max-width: 20rem) {
-    #navigation-area {
-        padding: 0;
     }
 }
 
