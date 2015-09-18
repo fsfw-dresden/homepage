@@ -59,21 +59,30 @@ body {
     background: #FAFAFA;
 }
 
-ul#navigation {
-    margin: 0;
-    margin-left: calc(150px + 1rem);
+/* NOTE: Don't confuse the class .navigation with the ID #navigation. The class
+ * also applies to #mobile-navigation. */
+ul.navigation {
     list-style: none;
     display: inline;
+    margin: 0;
     padding: 0;
 }
 
-ul#navigation > li {
+ul#navigation {
+    margin-left: calc(150px + 1rem);
+}
+
+ul#mobile-navigation {
+    display: none;
+}
+
+ul.navigation > li {
     display: inline;
     margin: 0;
     padding: 0;
 }
 
-ul#navigation > li > a {
+ul.navigation > li > a {
     display: inline-block;
     color: inherit !important;
     text-decoration: none !important;
@@ -83,47 +92,54 @@ ul#navigation > li > a {
     font-weight: bold;
 }
 
+/* .nav-icon applies to icons in both .navigation boxes, .floated-icon applies
+ * only in the #navigation bar */
+ul.navigation > li.nav-icon > a {
+    width: 2rem;
+    text-align: center;
+}
+
 ul#navigation > li.floated-icon {
     float: right;
     position: relative;
     top: 2px;
 }
 
-ul#navigation > li > a > i.fa {
+ul.navigation > li > a > i.fa {
     font-size: 1.8rem;
 }
 
-ul#navigation > li.turquoise > a:hover,
-ul#navigation > li.turquoise > a:active,
-ul#navigation > li.turquoise > a:focus {
+ul.navigation > li.turquoise > a:hover,
+ul.navigation > li.turquoise > a:active,
+ul.navigation > li.turquoise > a:focus {
     background: #28ADB8;
     color: white !important;
 }
 
-ul#navigation > li.violet > a:hover,
-ul#navigation > li.violet > a:active,
-ul#navigation > li.violet > a:focus {
+ul.navigation > li.violet > a:hover,
+ul.navigation > li.violet > a:active,
+ul.navigation > li.violet > a:focus {
     background: #654BC7;
     color: white !important;
 }
 
-ul#navigation > li.green > a:hover,
-ul#navigation > li.green > a:active,
-ul#navigation > li.green > a:focus {
+ul.navigation > li.green > a:hover,
+ul.navigation > li.green > a:active,
+ul.navigation > li.green > a:focus {
     background: #6BBB00;
     color: white !important;
 }
 
-ul#navigation > li.twitter-blue > a:hover,
-ul#navigation > li.twitter-blue > a:active,
-ul#navigation > li.twitter-blue > a:focus {
+ul.navigation > li.twitter-blue > a:hover,
+ul.navigation > li.twitter-blue > a:active,
+ul.navigation > li.twitter-blue > a:focus {
     background: #55ACEE;
     color: white !important;
 }
 
-ul#navigation > li.github-black > a:hover,
-ul#navigation > li.github-black > a:active,
-ul#navigation > li.github-black > a:focus {
+ul.navigation > li.github-black > a:hover,
+ul.navigation > li.github-black > a:active,
+ul.navigation > li.github-black > a:focus {
     background: #333333;
     color: white !important;
 }
@@ -149,19 +165,37 @@ ul#navigation > li.github-black > a:focus {
     }
 }
 
-/* On very narrow screens (e.g. iPhone 5), we condense spacings in the
- * navigation a bit to keep it from breaking to the next line. */
-@media (max-width: 23rem) {
-    #navigation-area {
-        padding: 0 0.3rem;
+/* On narrow screens, we break the navigation icons out of the navigation bar,
+ * into a separate floating container. */
+
+@media (max-width: 500px) {
+    ul#navigation > li.floated-icon {
+        display: none;
     }
-    ul#navigation > li > a {
-        padding: 0.3rem;
+
+    ul#mobile-navigation {
+        display: block;
+        position: absolute;
+        top: -0.5rem;
+        right: 1rem;
+        box-shadow: 0 0 5px #CCC;
+        border-radius: 5px;
+        border: 1px solid #DDD;
+        padding: 0.75rem 0 0.25rem 0;
+        max-width: 9rem;
+        background: white;
+    }
+
+    #navigation-area {
+        text-align: center;
     }
 }
-@media (max-width: 20rem) {
-    #navigation-area {
-        padding: 0;
+
+/* On very narrow screens (e.g. iPhone 5), we have to restrict the width of the
+ * #mobile-navigation to two icons per row (instead of three). */
+@media (max-width: 23rem) {
+    ul#mobile-navigation {
+        max-width: 6rem;
     }
 }
 
