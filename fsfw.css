@@ -239,8 +239,14 @@ dl dd {
 /********** special rules for programm.html **********/
 
 .abstract {
-    font-size: 80%;
-    margin-left: 2rem;
+    font-size: 90%;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+aside.header-link {
+    float: right;
+    font-size: 0.8rem;
 }
 
 /* We condense the header layout a bit on narrow screens because it really looks weird when these inline-blocks break to the next line. */
