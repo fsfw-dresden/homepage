@@ -302,15 +302,22 @@ a:focus:visited {
 
 /********** special rules for programm.html **********/
 
-.abstract {
+.abstract p {
     font-size: 90%;
-    margin-left: 3rem;
-    margin-right: 3rem;
+    padding: 0 3rem;
+}
+
+@media(max-width: 30rem) {
+    .abstract p {
+        padding: 0 2rem;
+    }
 }
 
 aside.header-link {
     float: right;
     font-size: 0.8rem;
+    margin: 1rem;
+    margin-top: 0.5rem !important;
 }
 
 /* We condense the header layout a bit on narrow screens because it really looks weird when these inline-blocks break to the next line. */
