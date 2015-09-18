@@ -206,6 +206,33 @@ dl dd {
     font-size: 120%;
 }
 
+a:link {
+    color: #28ADB8;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #654BC7;
+    text-decoration: none;
+}
+
+a:hover:link,
+a:active:link,
+a:focus:link {
+    color: #6BBB00;
+    text-decoration: underline;
+}
+
+a:hover:visited,
+a:active:visited,
+a:focus:visited {
+    color: #654BC7;
+    text-decoration: underline;
+}
+
+
+
+
 /********** special rules for themen.html **********/
 
 #content-container.nopadding {
