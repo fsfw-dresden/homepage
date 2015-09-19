@@ -396,3 +396,25 @@ footer ul#imagecredit li:target {
     display: inline-block;
     background: #CCC;
 }
+
+/* Styling for the impressum-link footer */
+footer.legal-links {
+    display: block;
+    background: white;
+    box-shadow: 0 0 3px #CCC;
+    width: 100%;
+    text-align: center;
+}
+
+footer.legal-links ul {
+    list-style: none;
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+footer.legal-links ul li {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
