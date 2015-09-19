@@ -187,6 +187,7 @@ ul.navigation > li.github-black > a:focus {
     }
 
     #navigation-area {
+        padding: 0;
         text-align: center;
     }
 }
