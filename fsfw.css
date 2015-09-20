@@ -62,7 +62,7 @@ nav {
     width: 100%;
     z-index: 1;
     position: relative; /* fallback for clients without position:sticky support */
-    /* position: sticky; (work in progress, not yet enabled) */
+    position: sticky;   /* only supported in Firefox ATM, see http://caniuse.com/#feat=css-sticky */
     top: 0;
 }
 
@@ -73,6 +73,17 @@ nav {
     padding: 0 0.5rem 0 1rem;
     box-sizing: border-box;
     line-height: 3rem;
+    position: relative; /* for correct placement of #sticky-sitelogo */
+}
+
+#sticky-sitelogo {
+    position: absolute;
+    left: 1rem;
+    top: -0.2rem;
+}
+#sticky-sitelogo img {
+    width: 150px;
+    vertical-align: middle;
 }
 
 /* NOTE: Don't confuse the class .navigation with the ID #navigation. The class
@@ -167,6 +178,9 @@ ul.navigation > li.github-black > a:focus {
 @media (max-width: 700px) {
     #sitelogo img {
         top: -10px;
+    }
+    #sticky-sitelogo {
+        display: none;
     }
 
     #navigation-area {
