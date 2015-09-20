@@ -22,15 +22,48 @@ body {
     width: 100%;
     height: 160px; /* exact height to match the banner image */
     background: url(./img/banner.png) repeat-x;
+    overflow: visible;
+    z-index: 2;         /* to make the #sitelogo overlap the rest */
+    position: relative; /* z-index only affects positioned elements */
+    box-shadow: inset 0 -1px 3px -1px #CCC;
 }
 
-#navigation-stripe {
+#banner-container {
+    display: block;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0;
+    position: relative; /* for placement of #sitelogo */
+    overflow: visible;
+}
+
+#sitelogo img {
+    width: 150px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #CCC;
+    position: absolute;
+    top: 110px;
+    left: 1rem;
+    background: white;
+}
+#sitelogo:active img,
+#sitelogo:focus img,
+#sitelogo:hover img {
+    box-shadow: 0 0 8px #CCC;
+    background: #FAFAFA;
+}
+
+/********** navigation bar **********/
+
+nav {
     display: block;
     background: white;
-    box-shadow: 0 0 3px #CCC;
+    box-shadow: 0 0 3px #CCC; /* NOTE: does not work for the top edge because of z-index; see #banner above for fix */
     width: 100%;
-    z-index: 2;
-    position: relative; /* z-index only affects positioned elements */
+    z-index: 1;
+    position: relative; /* fallback for clients without position:sticky support */
+    position: sticky;   /* only supported in Firefox ATM, see http://caniuse.com/#feat=css-sticky */
+    top: 0;
 }
 
 #navigation-area {
@@ -40,23 +73,17 @@ body {
     padding: 0 0.5rem 0 1rem;
     box-sizing: border-box;
     line-height: 3rem;
-    position: relative; /* for placement of #sitelogo */
+    position: relative; /* for correct placement of #sticky-sitelogo */
 }
 
-#sitelogo img {
-    width: 150px;
-    border-radius: 5px;
-    box-shadow: 0 0 5px #CCC;
+#sticky-sitelogo {
     position: absolute;
-    top: -50px;
     left: 1rem;
-    background: white;
+    top: -0.2rem;
 }
-#sitelogo:active img,
-#sitelogo:focus img,
-#sitelogo:hover img {
-    box-shadow: 0 0 8px #CCC;
-    background: #FAFAFA;
+#sticky-sitelogo img {
+    width: 150px;
+    vertical-align: middle;
 }
 
 /* NOTE: Don't confuse the class .navigation with the ID #navigation. The class
@@ -157,7 +184,10 @@ ul.navigation > li.github-black > a:focus {
 
 @media (max-width: 750px) {
     #sitelogo img {
-        top: -170px;
+        top: -10px;
+    }
+    #sticky-sitelogo {
+        display: none;
     }
 
     #navigation-area {
