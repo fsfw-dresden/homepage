@@ -2,3 +2,4 @@ kanboard
 wiki
 testing
 *.php
+docroot/*.html
