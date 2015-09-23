@@ -1,0 +1,95 @@
+<iCalendar>
+	<vcalendar method="PUBLISH" version="2.0" prodid="-//FSFW-Homepage//event iCal-Export//DE">
+<!--	<vevent>
+		<uid>ws1501@fsfw-dresden.de</uid>
+		<dtstart>20160130</dtstart>
+		<dtend>20160201</dtend>
+		<summary>FSFW Treffen</summary>
+		<url>https://fsfw-dresden.de/</url>
+		<location>SLUB</location>
+		<categories>
+			<item>Misc</item>
+		</categories>
+	</vevent>-->
+	<vevent>
+		<uid>ws1502@fsfw-dresden.de</uid>
+		<dtstart>20150924T183000</dtstart>
+		<summary>FSFW Treffen</summary>
+		<url>https://fsfw-dresden.de/</url>
+		<location>SLUB Dresden, Hauptgebäude Raum -2.115, Zellescher Weg 18, 01069 Dresden</location>
+		<categories>
+			<item>Misc</item>
+		</categories>
+	</vevent>
+	<vevent>
+		<uid>ws1503@fsfw-dresden.de</uid>
+		<dtstart>20151008T183000</dtstart>
+		<summary>FSFW Treffen</summary>
+		<url>https://fsfw-dresden.de/</url>
+		<location>SLUB Dresden, Hauptgebäude Raum -2.115, Zellescher Weg 18, 01069 Dresden</location>
+		<categories>
+			<item>Misc</item>
+		</categories>
+	</vevent>
+	<vevent>
+		<uid>ws1504@fsfw-dresden.de</uid>
+		<dtstart>20151022T183000</dtstart>
+		<summary>FSFW Treffen</summary>
+		<url>https://fsfw-dresden.de/</url>
+		<location>SLUB Dresden, Hauptgebäude Raum -2.115, Zellescher Weg 18, 01069 Dresden</location>
+		<categories>
+			<item>Misc</item>
+		</categories>
+	</vevent>
+	<vevent>
+		<uid>ws1505@fsfw-dresden.de</uid>
+		<dtstart>20151105T183000</dtstart>
+		<summary>FSFW Treffen</summary>
+		<url>https://fsfw-dresden.de/</url>
+		<location>SLUB Dresden, Hauptgebäude Raum -2.115, Zellescher Weg 18, 01069 Dresden</location>
+		<categories>
+			<item>Misc</item>
+		</categories>
+	</vevent>
+	<vevent>
+		<uid>ws1506@fsfw-dresden.de</uid>
+		<dtstart>20151119T183000</dtstart>
+		<summary>FSFW Treffen</summary>
+		<url>https://fsfw-dresden.de/</url>
+		<location>SLUB Dresden, Hauptgebäude Raum -2.115, Zellescher Weg 18, 01069 Dresden</location>
+		<categories>
+			<item>Misc</item>
+		</categories>
+	</vevent>
+	<vevent>
+		<uid>ws1507@fsfw-dresden.de</uid>
+		<dtstart>20151203T183000</dtstart>
+		<summary>FSFW Treffen</summary>
+		<url>https://fsfw-dresden.de/</url>
+		<location>SLUB Dresden, Hauptgebäude Raum -2.115, Zellescher Weg 18, 01069 Dresden</location>
+		<categories>
+			<item>Misc</item>
+		</categories>
+	</vevent>
+	<vevent>
+		<uid>ws1508@fsfw-dresden.de</uid>
+		<dtstart>20151217T183000</dtstart>
+		<summary>FSFW Treffen</summary>
+		<url>https://fsfw-dresden.de/</url>
+		<location>SLUB Dresden, Hauptgebäude Raum -2.115, Zellescher Weg 18, 01069 Dresden</location>
+		<categories>
+			<item>Misc</item>
+		</categories>
+	</vevent>
+	<vevent>
+		<uid>ws1509@fsfw-dresden.de</uid>
+		<dtstart>20160107T183000</dtstart>
+		<summary>FSFW Treffen</summary>
+		<url>https://fsfw-dresden.de/</url>
+		<location>SLUB Dresden, Hauptgebäude Raum -2.115, Zellescher Weg 18, 01069 Dresden</location>
+		<categories>
+			<item>Misc</item>
+		</categories>
+	</vevent>
+	</vcalendar>
+</iCalendar>
