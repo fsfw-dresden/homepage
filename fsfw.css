@@ -404,7 +404,7 @@ p.conclusion {
 footer {
     background: #E8E8E8;
     padding: 0.5rem 1rem;
-    box-sizing: padding-box;
+    box-sizing: border-box;
 }
 
 footer h2 {
