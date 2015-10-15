@@ -404,6 +404,7 @@ p.conclusion {
 footer {
     background: #E8E8E8;
     padding: 0.5rem 1rem;
+    box-sizing: padding-box;
 }
 
 footer h2 {
@@ -447,4 +448,7 @@ footer.legal-links ul li {
     display: inline;
     margin: 0;
     padding: 0;
+}
+
+footer.legal-links a {
 }
