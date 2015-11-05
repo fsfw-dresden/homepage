@@ -1,0 +1,40 @@
+{% extends "templates/base.html" %}
+{% set title = "Impressum" %}
+{% block content %}
+        <section>
+            <h1>Impressum</h1>
+            <dl>
+                <dt>Postanschrift</dt>
+                <dd>
+                    <div id="contact" class="vcard">
+                    <div id="postal-address" class="adr">
+                        <span class="extended-address">
+                            Hochschulgruppe Freie Software Freies Wissen<br>
+                            c/o TU Dresden
+                        </span><br>
+                        <span class="postal-code">01069</span>
+                        <span class="locality">Dresden</span><br>
+                        <span class="region">SN</span>
+                        <span class="country-name">Germany</span>
+                    </div>
+                    </div>
+                </dd>
+                <dt>Email</dt>
+                <dd><a href="mailto:kontakt@fsfw-dresden.de">kontakt@fsfw-dresden.de</a></dd>
+                <dt>Haftung für Links</dt>
+                <dd>
+                        Wir übernehmen keine Verantwortung für die
+                        Inhalte fremder Angebote. Seiten, auf die wir
+                        durch externe Links unmittelbar verweisen, werden
+                        von uns vor dem Setzen eines Links sorgfältig
+                        ausgewählt. Auf spätere Änderungen von unmittelbar
+                        verlinkten Seiten sowie auf Inhalte nachfolgender
+                        Seiten fremder Angebote haben wir jedoch keinen
+                        Einfluss. Wir distanzieren uns daher ausdrücklich
+                        von späteren Änderungen unmittelbar verlinkter
+                        Seiten, den Inhalten auf nachfolgenden Seiten
+                        sowie deren Anbietern.
+                </dd>
+            </dl>
+        </section>
+{% endblock %}
