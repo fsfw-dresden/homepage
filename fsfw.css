@@ -513,6 +513,13 @@ footer.legal-links a {
 	height: 0.75em;
 	vertical-align: -15%;
 }
+.fa-sb {
+	line-height: 1.5em;
+	width: 1.5em;
+	height: 1.5em;
+	vertical-align: -15%;
+	margin-left: 0.2ex;
+}
 .fa {
 	display: inline-block;
 	transform: translate(0px, 0px);
