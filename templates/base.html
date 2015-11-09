@@ -19,6 +19,14 @@
     <link rel="profile" href="http://microformats.org/profile/hcard">
 </head>
 <body>
+    {% if staging | default(False) %}
+    <div id="staging-warning">
+        ACHTUNG: Dies ist nicht unsere offizielle Website sondern
+        unsere Testumgebung!  Unsere offizelle Website ist
+        unter <a href="//fsfw-dresden.de/index.html">fsfw-dresden.de</a>
+        zu finden.
+    </div>
+    {% endif %}
     <header id="banner">
         <div id="banner-container">
             <a id="sitelogo" href="./index.html" title="Zur Startseite"><img src="./img/sitelogo.svg" title="FSFW-Logo"></a>

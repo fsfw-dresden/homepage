@@ -452,3 +452,14 @@ footer.legal-links ul li {
 
 footer.legal-links a {
 }
+
+/* Styling for the staging warning */
+div.staging-warning {
+    display: block;
+    position: absolute;
+    font-size: 150%;
+    left: 0;
+    top: 0;
+    background: red;
+    z-index: 100; /* assure it is always on top */
+}
