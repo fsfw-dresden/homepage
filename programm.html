@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Programm &ndash; Hochschulgruppe für Freie Software und Freies Wissen Dresden</title>
     <link rel="stylesheet" type="text/css" href="./fsfw.css">
-    <link rel="stylesheet" type="text/css" href="./font/font-awesome.min.css">
     <link rel="shortcut icon" href="./img/favicon.ico" sizes="32x32">
     <link rel="apple-touch-icon" sizes="152x152" href="./img/apple-touch-icon-152x152.png">
     <link rel="apple-touch-icon" sizes="120x120" href="./img/apple-touch-icon-120x120.png">
@@ -17,17 +16,16 @@
         <div id="banner-container">
             <a id="sitelogo" href="./index.html" title="Zur Startseite"><img src="./img/sitelogo.svg" title="FSFW-Logo"></a>
             <ul id="mobile-navigation" class="navigation">
-                <li class="nav-icon twitter-blue"><a href="https://twitter.com/fsfwdresden">
-                    <i class="fa fa-lg fa-twitter" title="Unser Twitter-Account"></i>
-                </a></li><!--
-                --><li class="nav-icon facebook-blue"><a href="https://facebook.com/fsfwdresden">
-                    <i class="fa fa-lg fa-facebook-official" title="Unsere Facebook-Seite"></i>
-                </a></li><!--
-                --><li class="nav-icon github-black"><a href="https://github.com/fsfw-dresden">
-                        <i class="fa fa-lg fa-github" title="Unsere GitHub-Organisation"></i>
-                </a></li><!--
-                --><li class="nav-icon turquoise"><a href="mailto:kontakt@fsfw-dresden.de">
-                        <i class="fa fa-lg fa-envelope-o" title="Kontakt per E-Mail aufnehmen"></i>
+                <li class="nav-icon facebook-blue"><a href="https://facebook.com/fsfwdresden">
+                    <i class="fa fa-lg logo-facebook l-svg" title="Unsere Facebook-Seite">&nbsp;</i>
+                </a></li><li class="nav-icon twitter-blue"><a href="https://twitter.com/fsfwdresden">
+                    <i class="fa fa-lg logo-twitter l-svg" title="Unser Twitter-Account">&nbsp;</i>
+                </a></li><li class="nav-icon diaspora-grey"><a href="https://jenaspora.de/u/fsfw_dresden">
+                    <i class="fa fa-lg logo-diaspora l-svg" title="Unser Diaspora-Account">&nbsp;</i>
+                </a></li><li class="nav-icon github-black"><a href="https://github.com/fsfw-dresden">
+                    <i class="fa fa-lg logo-github l-svg" title="Unsere GitHub-Organisation">&nbsp;</i>
+                </a></li><li class="nav-icon turquoise"><a href="mailto:kontakt@fsfw-dresden.de">
+                    <i class="fa fa-lg logo-envelope l-svg" title="Kontakt per E-Mail aufnehmen">&nbsp;</i>
                 </a></li>
             </ul>
         </div>
@@ -41,20 +39,24 @@
                 --><li class="green"><a href="./programm.html">Programm</a></li><!--
                 --><li class="turquoise"><a href="//wiki.fsfw-dresden.de">Wiki</a></li><!--
                 --><li class="nav-icon floated-icon turquoise"><a href="mailto:kontakt@fsfw-dresden.de">
-                    <i class="fa fa-lg fa-envelope-o" title="Kontakt per E-Mail aufnehmen"></i>
+                    <i class="fa fa-lg logo-envelope l-svg" title="Kontakt per E-Mail aufnehmen">&nbsp;</i>
                     <span class="hidden">E-Mail</span>
                 </a></li><!--
                 --><li class="nav-icon floated-icon github-black"><a href="https://github.com/fsfw-dresden">
-                    <i class="fa fa-lg fa-github" title="Unsere GitHub-Organisation"></i>
+                    <i class="fa fa-lg logo-github l-svg" title="Unsere GitHub-Organisation">&nbsp;</i>
                     <span class="hidden">Github</span>
                 </a></li><!--
-                --><li class="nav-icon floated-icon facebook-blue"><a href="https://facebook.com/fsfwdresden">
-                    <i class="fa fa-lg fa-facebook-official" title="Unsere Facebook-Seite"></i>
-                    <span class="hidden">Facebook</span>
+                --><li class="nav-icon floated-icon diaspora-grey"><a href="https://jenaspora.de/u/fsfw_dresden">
+                    <i class="fa fa-lg logo-diaspora l-svg" title="Unser Diaspora-Account">&nbsp;</i>
+                    <span class="hidden">Diaspora</span>
                 </a></li><!--
                 --><li class="nav-icon floated-icon twitter-blue"><a href="https://twitter.com/fsfwdresden">
-                    <i class="fa fa-lg fa-twitter" title="Unser Twitter-Account"></i>
+                    <i class="fa fa-lg logo-twitter l-svg" title="Unser Twitter-Account">&nbsp;</i>
                     <span class="hidden">Twitter</span>
+                </a></li><!--
+                --><li class="nav-icon floated-icon facebook-blue"><a href="https://facebook.com/fsfwdresden">
+                    <i class="fa fa-lg logo-facebook l-svg" title="Unsere Facebook-Seite">&nbsp;</i>
+                    <span class="hidden">Facebook</span>
                 </a></li>
             </ul>
         </div>
@@ -63,11 +65,13 @@
         <section class="abstract notopmargin turquoise">
             <div class="imageheader" style="background-image:url(./img/topics/together-960x200.jpg)">
                 <h1>Unser Programm</h1>
-                <a title="Lizenz für dieses Bildmaterial" class="imagelicense" href="#imagecredit1"><img src="./img/license/cc.svg" alt="CC"><img src="./img/license/by.svg" alt="-BY"></a>
+                <a title="Lizenz: CC-BY" class="imagelicense" href="#imagecredit1">
+					<i class="fa fa-sb symbl-cc l-svg">&nbsp;</i><i class="fa fa-sb symbl-by l-svg">&nbsp;</i>
+				</a>
             </div>
             <aside class="header-link">
                 <a href="./media/fsfw-programm.pdf">
-                    Druckfassung<img src="./img/pdf.png" style="vertical-align: middle; padding-left: 0.25rem" alt="PDF logo">
+                    Druckfassung<i class="fa fa-sb symbl-pdf-file l-svg" title="PDF-Datei">&nbsp;</i>
                 </a>
             </aside>
             <p>Die Ende 2014 gegründete Hochschulgruppe “Freie Software, Freies Wissen” (FSFW) beschäftigt sich mit den technischen sowie gesellschaftlichen Aspekten freier Software und freien Wissens an der Hochschule.</p>
