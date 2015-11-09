@@ -2,9 +2,21 @@ fsfw-dresden/homepage
 =====================
 
 This repo powers our homepage. On pushing to the remote
-<ssh://git@rosetta.fsfw-dresden.de/infra/homepage> the template-engine
-will be run to assemble the sites and copy them to the dir served by
-the webserver.
+<git@github.com:fsfw-dresden/homepage.git> the template-engine will be
+run to assemble the sites and copy them to the dir served by the
+webserver.
+
+All pushed branches that are not blacklisted are built and the results
+are available at <http://staging.fsfw-dresden.de/branch/name.branch/>.
+
+The branch `master` is built and available at
+<http://fsfw-dresden.de/>.
+
+One can also build the homepage locally by using the tools found in
+the homepage-build repository
+<https://github.com/fsfw-dresden/homepage-build>. The build process is
+described in the README there. Then one can point a browser to
+`file:///path/to/homepage/checkout/docroot` to inspect the results.
 
 Short guide on editing
 ----------------------
