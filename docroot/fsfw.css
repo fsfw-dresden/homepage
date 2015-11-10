@@ -264,7 +264,8 @@ h1 {
 
 #content-container > section:not(.notopmargin):first-child > h1:first-child {
     /* when the content starts with a <h1>, move it next to the overflowing sitelogo */
-    margin-top: 0rem;
+    padding-top: 0.2ex;
+    margin-top: 0;
     margin-left: calc(150px + 2rem);
 }
 
