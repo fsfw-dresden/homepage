@@ -398,6 +398,7 @@ section.green h1 {
 
 section:first-child .imageheader h1 {
     margin-left: calc(150px + 2rem);
+    margin-top: 0.3rem;
 }
 
 p.conclusion {
