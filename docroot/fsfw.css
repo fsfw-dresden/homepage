@@ -240,12 +240,12 @@ ul.navigation > li.github-black > a:focus {
 
 #content-container {
     display: block;
-    padding: 1rem 0;
     margin: 0 auto;
     max-width: 960px;
     box-sizing: border-box;
     background: white;
     box-shadow: 0 0 3px #CCC;
+    padding: 0;
 }
 
 #content-container > section > * {
@@ -309,11 +309,6 @@ a:focus:visited {
 
 
 /********** special rules for themen.html **********/
-
-#content-container.nopadding {
-    padding-top: 0;
-    padding-bottom: 0;
-}
 
 #content-container section .imageheader {
     background-size: cover;
