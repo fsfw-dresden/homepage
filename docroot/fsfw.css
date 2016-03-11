@@ -119,14 +119,14 @@ ul.navigation > li > a {
     font-weight: bold;
 }
 
-/* .nav-icon applies to icons in both .navigation boxes, .floated-icon applies
- * only in the #navigation bar */
+/* .nav-icon applies to icons both in #share-navigation and #mobile-navigation
+ * (which are both .navigation) */
 ul.navigation > li.nav-icon > a {
     width: 2rem;
     text-align: center;
 }
 
-ul#navigation > li.floated-icon {
+ul#share-navigation {
     float: right;
     position: relative;
     top: 2px;
@@ -213,7 +213,7 @@ ul.navigation > li.github-black > a:focus {
  * into a separate floating container. */
 
 @media (max-width: 550px) {
-    ul#navigation > li.floated-icon {
+    ul#share-navigation {
         display: none;
     }
 
