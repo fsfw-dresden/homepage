@@ -305,8 +305,11 @@ a:focus:visited {
     text-decoration: underline;
 }
 
-
-
+#content-container:after {
+    content: "";
+    display: table;
+    clear: both;
+}
 
 /********** special rules for themen.html **********/
 
