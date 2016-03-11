@@ -187,18 +187,27 @@ ul.navigation > li.github-black > a:focus {
 
 /* facebook note banner */
 
-div.facebook-note {
-    position: absolute;
-    background-color: white;
-    color: black;
-    box-shadow: 1em 1em 2em rgba(0, 0, 0, 0.5);
+a#facebook-note {
     display: none;
-    padding: 1em;
-    width: 200px;
+    position: absolute;
+	top: calc(2.8rem - 3px);
+    width: 100%; /*relative to ul#share-navigation */
+	box-sizing: border-box;
+    /* box-shadow: 0 0 5px #CCC; */
+	border: 5px solid #3B5998;
+    padding: 0.5rem;
+    background: white;
+    color: black;
 }
 
-li:hover div.facebook-note, a:focus + div.facebook-note {
+li:hover a#facebook-note, a:focus + a#facebook-note {
     display: block;
+}
+
+a#facebook-note:focus, a#facebook-note:hover, a#facebook-note:active {
+    display: block;
+    background: #3B5998;
+    color: white;
 }
 
 /********** condensed header layout for mobile **********/
