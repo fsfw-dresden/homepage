@@ -455,6 +455,12 @@ footer ul#imagecredit li {
     padding: 0 0.5rem;
 }
 
+footer p.version {
+    margin: 0.5rem 1rem;
+    padding-left 0.5rem;
+    font-size: 0.8rem;
+}
+
 footer ul#imagecredit li:target {
     display: inline-block;
     background: #CCC;
