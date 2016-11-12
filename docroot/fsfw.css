@@ -16,7 +16,7 @@ body {
 }
 
 hr {
-	border: 4px solid #654BC7;
+	border: 4px inset #654BC7;
 }
 
 video {
