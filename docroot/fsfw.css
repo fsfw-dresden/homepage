@@ -15,6 +15,15 @@ body {
     padding: 0;
 }
 
+hr {
+	border: 4px inset #654BC7;
+}
+
+video {
+	width: 100%	!important;
+	height: auto	!important;
+}
+
 /********** header **********/
 
 #banner {
@@ -578,7 +587,13 @@ a:hover > .fa {
 	filter: invert(100%);
 }
 
-video {
-	width: 100%	!important;
-	height: auto	!important;
+.news h3 {
+	border-bottom: 2px solid #6BBB00;
+}
+
+span[datetime] {
+	float: right;
+	margin-right: 0.5ex;
+	font-family: monospace;
+	color: #666;
 }
